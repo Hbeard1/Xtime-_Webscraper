@@ -19,8 +19,8 @@ def login():
     # Switch to the Iframe I need
     browser.switch_to.frame('login')
     # input login info and submit
-    browser.find_element_by_id('login').send_keys('ebeard')
-    browser.find_element_by_id('password').send_keys('Aa268618402')
+    browser.find_element_by_id('login').send_keys('username')
+    browser.find_element_by_id('password').send_keys('password')
     browser.find_element_by_class_name('basic-button').click()
     # sleep to loaf full site
     time.sleep(5)
